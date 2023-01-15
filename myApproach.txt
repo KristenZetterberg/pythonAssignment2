@@ -1,0 +1,77 @@
+Purpose of this document :
+This file is to document how I finish this assignment. I will dcoument it as much as I can.
+
+> Clone Repository
+Have clone the file from https://github.com/KristenZetterberg/pythonAssignment2
+
+> Clone Create a virtual environment
+python3 -m venv .env
+. ./.env/bin/activate
+
+> There was a lesson 30th November which was about Classification Tree and can use it as a reference.
+
+> Create a jupyter notebook called premiumCustomer.ipynb
+
+-------------- PART 1 : Data Preparation -------------- 
+
+> Install pandas
+install pandas as pd
+
+> Read the dataset
+df = pd.read_csv('data/train_data.csv')
+
+> Quick look at the dataset
+df.head()
+
+> Identify the target column (Category in this dataset) which is a predicted value 
+df.Category.unique()
+
+> Check the number of unique values in each column . This help identify primary key in the dataset
+df.nunique()
+
+> Check data types of each column
+df.dtypes
+
+> Check the number of rows and columns in dataset
+df.shape
+
+> Handle column names with space 
+df['Age Span'].unique()
+
+> Find if there is missing values in the dataset
+df.isnull().any()
+
+-------------- Part 2 : Build Data Model -------------- 
+> Create dependent dataset
+
+> Create independent dataset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
